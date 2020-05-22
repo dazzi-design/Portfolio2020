@@ -1,0 +1,555 @@
+/* style.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {text-decoration: none;}
+ul{list-style-type: none;}
+body {
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+p {margin-bottom: 1em;}
+
+/* 해더 및 gnb */
+#main_header {
+    background: #5d5d5d;
+    width: 1200px;
+    height: 68px;
+    margin: 0 auto;
+    position: relative;
+}
+#main_header > .logo {
+    width: 387px;
+    height: 68px;
+    background: #171717;
+    padding-left: 20px;
+    float: left;
+}
+#main_header > .logo  a {
+    color: #fff;
+    line-height: 69px;
+    font-size: 24px;
+    font-weight: 800;
+}
+/* 메인메뉴 (gnb)*/
+#main_gnb {
+    float: right;
+    padding-right: 20px;
+    margin-top: 25px;
+    /* outline: 1px solid red; */
+}
+#main_gnb > ul > li {
+    display: inline-block;
+    margin-left: 30px;
+}
+#main_gnb > ul > li > a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#main_gnb > ul > li > a:hover {
+    /* border-bottom: 2px solid #fff; */
+    color: #f38181;
+}
+
+/* 메인 비주얼 */
+#main_visual {
+    width: 1200px;
+    height: 617px;
+    margin: 0 auto;
+    background: #ccc;
+    overflow: hidden;
+}
+#main_visual > .left {
+    position: relative;
+    float: left;
+    width: 387px;
+    height: 100%;
+    background: #171717;
+}
+#main_visual > .left .title{
+    position: absolute;
+    width: 480px;  
+    height: 150px;
+    background: #f38181;
+    left: 40px; top: 310px;
+    padding: 20px;
+}
+#main_visual header h2 span{
+    display: block;
+}
+#main_visual header h2 span:first-child{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+#main_visual header h2 span:last-child{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+#main_visual > .right{
+    float: right;
+    width: 813px;
+    height: 100%;
+    background: pink;
+    background-image: url("../images/visual2.jpg");
+    background-size: cover;
+}
+
+/* about */
+#about {
+    width: 1200px; height: 685px;
+    margin: 0 auto;
+    padding-top: 100px;
+    background: #ececec;
+}
+
+#about > .about_left {
+    position: relative;
+    width: 600px; height: 100%;
+    /* outline: 1px solid red; */
+    float: left;
+    background-image: url('../images/shape3.png'); /*패턴 찾아서 이미지 바꾸기*/
+    background-repeat: no-repeat;
+    background-position: 260px 470px;
+}
+#about > .about_left > .box {
+    position: absolute;
+    width: 360px;
+    height: 410px;
+    background: #202020;
+    left: 45px;
+}
+#about > .about_left > img {
+    position: relative;  /*앱솔로 잡아도 가능.*/
+    left: 90px; top: 45px;
+    box-shadow: 4px 4px 4px #ccc;
+}
+#about > .about_right {
+    width: 600px; height: 585px;
+    /* outline: 1px solid red; */
+    float: right;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: scroll;
+    position: relative;
+    
+}
+/* 스크롤 아이콘 고정 시키기 - js */
+#about > .about_right > #scroll_icon img{
+    width: 60px;
+    opacity: 0.4;
+    position: absolute;
+    
+    top: 250px; right: 20px;
+    
+}
+#about .about_right article {
+    padding-right: 80px;
+    line-height: 1.65;   /*행간 간격*/ 
+    padding: 20px;
+}
+#about .about_right article h3{
+    font-size: 18px;
+    text-align: center;
+}
+#about .about_right article h3 span {
+    font-size: 12px;
+}
+#about .about_right article div {
+    padding-left: 20px;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+
+/* 각 섹션 영역의 공통 헤더 스타일 */
+
+.section_header > span {
+    font-size: 24px;
+    font-weight: bolder;
+    /* background: #fef200; */
+    text-align: right;
+   padding-left: 50px;
+   /* 형광펜 밑줄 넣기 */
+   background-image: url('../images/highlighter.png');
+   background-repeat: no-repeat;
+   background-position: 40px;
+   
+
+}
+.section_header > h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/* 작품소개 */
+#works {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  #works .section_header {
+    text-align: center;
+  }
+
+  #works .section_header>span {
+    padding-left: 160px;
+    background-position: 150px;
+  }
+  #works>nav {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 80px;
+  }
+
+  #works>nav>a {
+    color: #202020;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  /* 워크 nav 호버 */
+  #works>nav>a:hover{
+      color: #f38181;
+  }
+
+  #work_list_all {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  #work_list_all li {
+    /* position: relative; */
+    /* width: 386.66px; height: 380px; */
+    /* overflow: hidden; */
+    /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); */
+    /* 마진에서 패딩으로 변경됨 (동적 목록이라서 변인이 생김) */
+    /* margin-right: 20px; */
+    width: 320px; height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    float: left;
+  }
+  #work_list_all li a {
+      position: relative;
+      display: block;
+      /* 작품 이미지 클리핑(확대시 영역 가림) */
+      overflow: hidden;
+      /* width: 100%; height: 100%; */
+  }
+
+  #work_list_all li img {
+    width: 100%;
+  }
+
+  /* hover 박스 */
+  #work_list_all li>a>.info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* background: #fef200; */
+    background: #ccc;
+    display: none;
+    opacity: 0.8;
+  }
+   /* 모션 확대 효과 */
+   #work_list_all li img {
+    transition: 0.5s;
+  }
+
+  #work_list_all li:hover img {
+    transform: scale(1.2);
+  }
+  
+  /* hover box 안에 꾸미기 */
+  #work_list_all li>a>.info {
+    padding: 20px;
+  }
+  #work_list_all li>a>.info .subject {
+      font-size: 26px;
+      font-weight: bolder;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 20px;
+  }
+  #work_list_all li>a>.info .title {
+    font-size: 20px;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+  #work_list_all li>a>.info .Explanation {
+      font-size: 16px;
+      text-align: center;
+  }
+
+  #work_list_all li:hover .info {
+    display: block;
+    color: #000;
+  }
+
+ 
+
+
+ /* 푸터 */
+ #contact {
+     margin: 0 auto;
+     width: 1200px;
+     height: 300px;
+     background: #202020;
+     /* outline: 1px solid red; */
+     
+ }
+ #contact > .section_header {
+     text-align: center;
+     color: #fff;
+     padding-top: 40px;
+ }
+ #contact > #footer_wrap {
+     width: 1200px;
+     height: 60px;
+     /* outline: 1px solid red; */
+ }
+ #contact > #footer_wrap > div {
+     /* position: absolute; */
+     float: left;
+     height: 60px;
+     width: 386.66px;
+     /* outline: 1px solid green; */
+     margin-right: 20px;
+     text-align: center;
+ }
+ #contact > #footer_wrap > div:nth-child(3){
+     margin-right: 0;
+     margin-bottom: 50px;
+ }
+ #contact > #footer_wrap > p {
+     text-align: center;
+     color: #ccc;
+     font-size: 10px;
+ }
+ 
+ .footer_item {
+     color: #fff;
+ }
+ .footer_item > h3 {
+     font-weight: 500;
+     font-size: 8px;  /*왜 안먹힐까?ㅇㅅㅇ*/
+ }
+
+
+ 
+
+/* ========================서브 페이지 work01~10=========================== */
+#work01 #works,
+#work02 #works,
+#work03 #works,
+#work04 #works,
+#work05 #works,
+#work06 #works,
+#work07 #works,
+#work08 #works,
+#work09 #works,
+#work10 #works{padding: 0;}
+
+#work01 #works .section_header,
+#work02 #works .section_header,
+#work03 #works .section_header,
+#work04 #works .section_header,
+#work05 #works .section_header,
+#work06 #works .section_header,
+#work07 #works .section_header,
+#work08 #works .section_header,
+#work09 #works .section_header,
+#work10 #works .section_header{
+    background: #ccc;
+    background-image: url("../images/my_works.jpg");
+    height: 200px;
+}
+#work01 #works .section_header h2,
+#work02 #works .section_header h2,
+#work03 #works .section_header h2,
+#work04 #works .section_header h2,
+#work05 #works .section_header h2,
+#work06 #works .section_header h2,
+#work07 #works .section_header h2,
+#work08 #works .section_header h2,
+#work09 #works .section_header h2,
+#work10 #works .section_header h2 {
+    margin: 0; line-height: 200px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #333;
+}
+#work01 #works .section_header h2 span,
+#work02 #works .section_header h2 span,
+#work03 #works .section_header h2 span,
+#work04 #works .section_header h2 span,
+#work05 #works .section_header h2 span,
+#work06 #works .section_header h2 span,
+#work07 #works .section_header h2 span,
+#work08 #works .section_header h2 span,
+#work09 #works .section_header h2 span,
+#work10 #works .section_header h2 span {
+    font-size: 20px;
+}
+#work01 section article,
+#work02 section article,
+#work03 section article,
+#work04 section article,
+#work05 section article,
+#work06 section article,
+#work07 section article,
+#work08 section article,
+#work09 section article,
+#work10 section article {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* outline: 1px solid red; */
+}
+#work01 section article h2,
+#work02 section article h2,
+#work03 section article h2,
+#work04 section article h2,
+#work05 section article h2,
+#work06 section article h2,
+#work07 section article h2,
+#work08 section article h2,
+#work09 section article h2,
+#work10 section article h2 {margin-bottom: 0.5em; padding-left: 20px;}
+
+#work01 section article p, #work01 section article a,
+#work02 section article p, #work02 section article a,
+#work03 section article p, #work03 section article a,
+#work04 section article p, #work04 section article a,
+#work05 section article p, #work05 section article a,
+#work06 section article p, #work06 section article a,
+#work07 section article p, #work07 section article a,
+#work08 section article p, #work08 section article a,
+#work09 section article p, #work09 section article a,
+#work10 section article p, #work10 section article a {
+    padding-left: 20px;
+}
+
+/* article title 아래 이미지 타이틀 배열 */
+#work01 .img_title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 600px;
+    font-size: 16px;
+    color: #ccc;
+    background: #202020;
+    text-align: center; 
+    /* outline: 1px solid red; */
+    float: left;
+}
+
+/* sub-page 이미지 부분 나열하기 */
+#work01 #works .sub_img-box,
+#work02 #works .sub_img-box,
+#work03 #works .sub_img-box,
+#work04 #works .sub_img-box,
+#work05 #works .sub_img-box,
+#work06 #works .sub_img-box,
+#work07 #works .sub_img-box,
+#work08 #works .sub_img-box,
+#work09 #works .sub_img-box,
+#work10 #works .sub_img-box{
+    padding-bottom: 30px;
+}
+/* work01~03 이미지 나열방식 다름 */
+#work01 #works .sub_img-box div img,
+/* #work02 #works .sub_img-box div img, */
+#work03 #works .sub_img-box div img{
+    width: 600px;
+    float: left;
+}
+/* work07 이미지 나열방식 다름 */
+#work07 #works .sub_img-box .a-left img{
+    width: 1200px;
+}
+#work07 #works .sub_img-box #d-left img{
+    width: 600px;
+    float: left;
+}
+#work07 #works .sub_img-box #d-right img{
+    width: 600px;
+    float: right;
+}
+
+
+#work04 #works .sub_img-box div img,
+#work05 #works .sub_img-box div img,
+#work06 #works .sub_img-box div img,
+#work08 #works .sub_img-box div img,
+#work09 #works .sub_img-box div img,
+#work10 #works .sub_img-box div img {
+    width: 1200px;
+}
+#work01 #works article p,
+#work02 #works article p,
+#work03 #works article p,
+#work04 #works article p,
+#work05 #works article p,
+#work06 #works article p,
+#work07 #works article p,
+#work08 #works article p,
+#work09 #works article p,
+#work10 #works article p {
+    line-height: 1.5em;
+}
+
+
+
+/* ================== sub-page 푸터 ================== */
+#work01 #contact, 
+#work02 #contact, 
+#work03 #contact, 
+#work04 #contact, 
+#work05 #contact, 
+#work06 #contact, 
+#work07 #contact, 
+#work08 #contact,
+#work09 #contact,
+#work10 #contact{
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    background: #202020;
+    clear: both;
+    /* outline: 1px solid red; */
+    
+}
+
+
+#work01 #contact > p, 
+#work02 #contact > p, 
+#work03 #contact > p, 
+#work04 #contact > p, 
+#work05 #contact > p, 
+#work06 #contact > p, 
+#work07 #contact > p, 
+#work08 #contact > p,
+#work09 #contact > p,
+#work10 #contact > p {
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+    padding-top: 40px;
+}
+  
+     
+     
+ 
+ 
