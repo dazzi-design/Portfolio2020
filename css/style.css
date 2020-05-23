@@ -468,27 +468,15 @@ p {margin-bottom: 1em;}
 #work10 #works .sub_img-box{
     padding-bottom: 30px;
 }
-/* work01~03 이미지 나열방식 다름 */
-#work01 #works .sub_img-box div img,
-/* #work02 #works .sub_img-box div img, */
-#work03 #works .sub_img-box div img{
+/* work01 이미지 나열방식 다름 */
+#work01 #works .sub_img-box div img{
     width: 600px;
     float: left;
 }
-/* work07 이미지 나열방식 다름 */
-#work07 #works .sub_img-box .a-left img{
-    width: 1200px;
-}
-#work07 #works .sub_img-box #d-left img{
-    width: 600px;
-    float: left;
-}
-#work07 #works .sub_img-box #d-right img{
-    width: 600px;
-    float: right;
-}
 
 
+
+#work03 #works .sub_img-box div img,
 #work04 #works .sub_img-box div img,
 #work05 #works .sub_img-box div img,
 #work06 #works .sub_img-box div img,
